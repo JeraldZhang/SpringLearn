@@ -1,5 +1,6 @@
 package com.spring.learn;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,6 +12,6 @@ public class DemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		Assert.assertEquals("message", 1.01, 1.02, 0.1);
 	}
-
 }
